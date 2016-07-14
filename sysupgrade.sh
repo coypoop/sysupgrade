@@ -199,7 +199,7 @@ sysupgrade_fetch() {
     fi
 
     case "${releasedir}" in
-        ftp://*|http://*)
+        ftp://*|http://*|https://*)
             mkdir -p "${cachedir}"
 
             for relative_file in ${fetch_files}; do
